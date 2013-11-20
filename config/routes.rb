@@ -1,20 +1,10 @@
 CustomerRelationManager::Application.routes.draw do
-<<<<<<< HEAD
 
-# <<<<<<< HEAD
 #   get "finder/index"
 
 #   get "finder/missing_email"
 
-# =======
-# >>>>>>> 619b49d147f13810923dce6c713795532a534d63
 
-
-
-
-
-=======
->>>>>>> 619b49d147f13810923dce6c713795532a534d63
   resources :customers
 
 
