@@ -1,5 +1,8 @@
 CustomerRelationManager::Application.routes.draw do
 
+  resources :provinces
+
+
 #   get "finder/index"
 
 #   get "finder/missing_email"

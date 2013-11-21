@@ -1,3 +1,10 @@
+<% if customer.province_id == nil then
+	  output = "None"
+	else
+	  output = customer.province.name
+  end %>
+
+
 <section class="customer">
 
 	<p class="edit"><%= link_to "Edit", edit_customer_path(customer) %></p>
@@ -9,6 +16,8 @@
 	<p><b>Phone:</b><%= customer.phone_number %></p>
 
 	<p><b>Email:</b><%= customer.email %></p>
+
+	<p><b>Province:</b><%= output %></p>
 
 	<p><b>Notes:</b><%= customer.notes %></p>
 </section>

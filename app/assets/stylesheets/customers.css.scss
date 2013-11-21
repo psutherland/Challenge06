@@ -2,18 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#content {
-	margin: 20px auto;
-	width: 850px;
-	border: 2px solid black;
-	text-align: center;
-	background-color: #06799F;
-}
-
-#content #links a {
-	color: white;
-}
-
 .customer {
 	width: 250px;
 	height: 400px;
@@ -42,4 +30,8 @@
 	background-color: lightgrey;
 	display: block;
 	margin: 0px auto;
+}
+
+.customer b {
+	padding-right: 5px;
 }
