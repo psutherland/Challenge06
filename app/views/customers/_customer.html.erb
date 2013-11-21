@@ -1,11 +1,14 @@
+<section class="customer">
 
-<h2><%= customer.full_name %></h2>
+	<p class="edit"><%= link_to "Edit", edit_customer_path(customer) %></p>
+	<h2><%= customer.full_name %></h2>
 
-<!-- <img src="<%= customer.image %>" /> -->
-<%= image_tag(customer.image) %>
+	<!-- <img src="<%= customer.image %>" /> -->
+	<%= image_tag(customer.image, :class => "customer_image") %>
 
-<p><b>Phone:</b><%= customer.phone_number %></p>
+	<p><b>Phone:</b><%= customer.phone_number %></p>
 
-<p><b>Email:</b><%= customer.email %></p>
+	<p><b>Email:</b><%= customer.email %></p>
 
-<p><b>Notes:</b><%= customer.notes %></p>
+	<p><b>Notes:</b><%= customer.notes %></p>
+</section>

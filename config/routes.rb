@@ -3,6 +3,10 @@ CustomerRelationManager::Application.routes.draw do
 #   get "finder/index"
 
 #   get "finder/missing_email"
+  root :to => "finder#index", :via => :get
+
+  match "/finder" => "finder#index"
+  match "/finder/missing_email" => "finder#missing_email"
 
 
   resources :customers

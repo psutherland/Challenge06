@@ -1,2 +1,13 @@
-<h1>Finder#missing_email</h1>
-<p>Find me in app/views/finder/missing_email.html.erb</p>
+<div id="content">
+	<h1>Customers Missing Emails</h1>
+
+	<p id="links">
+		<%= link_to "New Customer", new_customer_path %> -
+		<%= link_to "All Customers", "/finder" %>
+	</p>
+
+	<% @customers.each do |customer| %>
+	<%= render customer %>
+	<% end %>
+</div>
+
