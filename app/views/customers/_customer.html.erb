@@ -1,23 +1,23 @@
 <% if customer.province_id == nil then
-	  output = "None"
-	else
-	  output = customer.province.name
-  end %>
+  output = "None"
+else
+  output = customer.province.name
+end %>
 
 
 <section class="customer">
 
-	<p class="edit"><%= link_to "Edit", edit_customer_path(customer) %></p>
-	<h2><%= customer.full_name %></h2>
+  <p class="edit"><%= link_to "Edit", edit_customer_path(customer) %></p>
+  <h2><%= customer.full_name %></h2>
 
-	<!-- <img src="<%= customer.image %>" /> -->
-	<%= image_tag(customer.image, :class => "customer_image") %>
+  <!-- <img src="/assets/01.jpg" /> -->
+  <%= image_tag(customer.image, :class => "customer_image") %>
 
-	<p><b>Phone:</b><%= customer.phone_number %></p>
+  <p><b>Phone:</b><%= customer.phone_number %></p>
 
-	<p><b>Email:</b><%= customer.email %></p>
+  <p><b>Email:</b><%= customer.email %></p>
 
-	<p><b>Province:</b><%= output %></p>
+  <p><b>Province:</b><%= output %></p>
 
-	<p><b>Notes:</b><%= customer.notes %></p>
+  <p><b>Notes:</b><%= customer.notes[0..100] %></p>
 </section>
